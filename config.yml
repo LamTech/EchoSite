@@ -1,0 +1,17 @@
+server_addr: "ngrok.local.com:4443"
+inspect_addr: "127.0.0.1:4040"
+echosite_id: "15996274270"
+echosite_token: "$2y$10$5flkEEcyi7fBJtpokGC.yOUBn2CgyHVa/eJmLHbRH5xG6UzBPCF46"
+tunnels:
+  web_a:
+    subdomain: success
+    proto:
+      https: 127.0.0.1:80
+  web_b:
+    subdomain: hades
+    proto:
+      http: 127.0.0.1:8080
+  tcp_a:
+    remote_port: 12596
+    proto:
+      tcp: 8080
